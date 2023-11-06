@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Shravan's Weather App</title>
+</head>
+
+<body>
+    <div class="weathercontainer">
+        <div class="search">
+            <input type="search" placeholder="Enter City Name" spellcheck="false">
+            <button><img src="images/search.png"></button>
+        </div>
+        <div class="weather">
+            <img src="images/weatherimage.png" class="weather-icon">
+            <h3 class="weather-condition">Rainy</h3>
+            <h1 class="temp">22°c</h1>
+            <h2 class="city">New York</h2>
+            <div class="details">
+                <div class="col">
+                    <span class="material-symbols-outlined">airwave</span>
+                    <div>
+                        <p class="humidity">75%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <span class="material-symbols-outlined">air</span>
+                    <div>
+                        <p class="wind">15 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="convertercontainer">
+        <h1>Temperature Converter</h1>
+        <input type="text" id="displayBox" readonly class="display">
+        <div>
+            <h3>Celsius</h3>
+            <input type="text" name="Celsius" id="celsiusBox" placeholder="Enter Celsius" class="inputbox">
+            <button onclick="convertCelsiusToFahrenheit()">Convert to Fahrenheit</button>
+        </div>
+        <div>
+            <h3>Fahrenheit</h3>
+            <input type="text" name="Fahrenheit" id="fahrenheitBox" placeholder="Enter Fahrenheit" class="inputbox">
+            <button onclick="convertFahrenheitToCelsius()">Convert to Celsius</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
